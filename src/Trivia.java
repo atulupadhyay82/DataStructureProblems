@@ -1,3 +1,6 @@
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.random.RandomGenerator;
@@ -50,6 +53,7 @@ public class Trivia {
         int numQuestion=size();
         boolean next=false, correct=false, start=true;
         Scanner sc= new Scanner(System.in);
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         while(true){
 
             if(questionCount == numQuestion) {
